@@ -1,0 +1,33 @@
+{
+  "name": "volantis",
+  "description": "Website for Vyuhaa - an Intra College Techno-Management Fest",
+  "main": "index.js",
+  "authors": [
+    "CTF Tech Team"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "vyuhaa",
+    "anna",
+    "university",
+    "intra",
+    "fest",
+    "Vyuhaa",
+    "Kurukshetra",
+    "k!"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-bootstrap": "^2.5.0",
+    "angular-cookies": "^1.6.6",
+    "angular-ui-router": "^1.0.6"
+  }
+}
