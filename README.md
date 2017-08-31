@@ -1,10 +1,10 @@
-This is a website for Vyuhaa'17 - an Intra College Techno-Management Fest Of Anna University(All 4 campuses).
+This is a website for <b>Vyuhaa'17</b> - an Intra College Techno-Management Fest Of Anna University(All 4 campuses).
 
-It is an angularjs web application.
+It is an <b>Angularjs</b> web application.
 
-Steps to run the project:
+<b>Steps to run the project:</b> <br>
 1) Install nodejs. <br>
-2) npm install(as root/admin)
-3) bower install --allow-root(as root/admin)
-4) Run "node volantis.js" in command line.
-5) In browser open http://localhost:8080
+2) npm install(as root/admin) <br>
+3) bower install --allow-root(as root/admin) <br>
+4) Run "node volantis.js" in command line. <br>
+5) In browser open http://localhost:8080 <br>
