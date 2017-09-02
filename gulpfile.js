@@ -12,7 +12,7 @@ var runSequence = require('run-sequence');
 var jshint = require('gulp-jshint');
 
 gulp.task('sass', function(){
-    return gulp.src('client/css/*')
+    return gulp.src('client/css/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({
@@ -85,9 +85,15 @@ gulp.task('audios', function() {
         .pipe(gulp.dest('dist/audio'))
 });
 
+gulp.task('jsLint', function () {
+    gulp.src('./client/scripts/*.js') // path to your files
+        .pipe(jshint())
+        .pipe(jshint.reporter()); // Dump results
+});
+
 gulp.task('build', function (callback) {
     runSequence('clean:dist',
-        ['sass', 'useref', 'images', 'fonts', 'jshint', 'videos', 'models', 'audios'],
+        ['sass', 'useref', 'images', 'fonts', 'jshint', 'videos', 'models', 'audios', 'jsLint'],
         callback
     )
 });

@@ -7,6 +7,11 @@
     function HomeController(state, scope, interval){
         var ctrl = this;
         ctrl.title = "Home Page";
+        ctrl.page = 1;
+
+        ctrl.change = function (id) {
+            ctrl.page = id;
+        }
     }
 
 })();
