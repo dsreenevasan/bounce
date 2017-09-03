@@ -1,3 +1,13 @@
 <div ng-controller="EventsController as ctrl">
-    <div ng-class="{'play' : ctrl.animated, 'play-reverse': ctrl.reverseAnimated, 'animation-target' : ctrl.bigDiv, 'eventlist' : !ctrl.bigDiv}" ng-click="ctrl.animate()"></div>
+    <div ng-class="{'play' : ctrl.animated, 'play-reverse': ctrl.reverseAnimated,
+    'animation-target' : ctrl.bigDiv, 'eventList' : !ctrl.flag && !ctrl.bigDiv, 'eventList-mid': ctrl.flag && !ctrl.bigDiv}"
+         ng-click="ctrl.animate()">
+        <button ng-click="ctrl.reverseAnimation();$event.stopPropagation()">close</button>
+    </div>
+
+    <!--<div ng-class="{'play' : ctrl.animated, 'play-reverse': ctrl.reverseAnimated,
+    'animation-target' : ctrl.bigDiv, 'eventList-mid' : !ctrl.bigDiv}"
+         ng-click="ctrl.animate()">
+        <button ng-click="ctrl.reverseAnimation();$event.stopPropagation()">close2</button>
+    </div>-->
 </div>
