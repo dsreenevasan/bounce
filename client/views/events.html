@@ -1,3 +1,3 @@
-<div ng-controller="EventsController">
-    Events
+<div ng-controller="EventsController as ctrl">
+    <div ng-class="{'play' : ctrl.animated, 'play-reverse': ctrl.reverseAnimated, 'animation-target' : ctrl.bigDiv, 'eventlist' : !ctrl.bigDiv}" ng-click="ctrl.animate()"></div>
 </div>
