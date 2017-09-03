@@ -1,13 +1,31 @@
 <div ng-controller="EventsController as ctrl">
-    <div ng-class="{'play' : ctrl.animated, 'play-reverse': ctrl.reverseAnimated,
-    'animation-target' : ctrl.bigDiv, 'eventList' : !ctrl.flag && !ctrl.bigDiv, 'eventList-mid': ctrl.flag && !ctrl.bigDiv}"
-         ng-click="ctrl.animate()">
-        <button ng-click="ctrl.reverseAnimation();$event.stopPropagation()">close</button>
-    </div>
 
     <!--<div ng-class="{'play' : ctrl.animated, 'play-reverse': ctrl.reverseAnimated,
     'animation-target' : ctrl.bigDiv, 'eventList-mid' : !ctrl.bigDiv}"
          ng-click="ctrl.animate()">
         <button ng-click="ctrl.reverseAnimation();$event.stopPropagation()">close2</button>
     </div>-->
+    <!--<div ng-class="{'play' : ctrl.animated, 'play-reverse': ctrl.reverseAnimated, 'animation-target' : ctrl.bigDiv, 'eventlist' : !ctrl.bigDiv}" ng-click="ctrl.animate()"></div>-->
+
+
+    <div class="events" style="margin-top: 20vh">
+        <div class="modal-frame" ng-class="{'state-appear' : ctrl.isModalOpen}">
+            <div class="modal">
+                <div class="modal-inset">
+                    <div class="button close" ng-click="ctrl.toggleModal()"><i class="fa fa-close" style="color: black"></i></div>
+
+                    <div class="modal-body">
+                        <h3>Such Modal, Much Animate!</h3>
+                        <p>Nothing groundbreaking, but I hope you enjoyed <br /> the physics for the open/close animation =).</p>
+                        <p class="ps">**I know the SASS is a bit messy, I did this on the fly and for fun <br /> and w.e. I DO WHAT I WANT!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay" ng-class="{'state-show': ctrl.isModalOpen}"></div>
+
+
+        <button class="fancy-btn open" ng-click="ctrl.toggleModal()">Can I haz Modal?</button>
+    </div>
+>>>>>>> master
 </div>
