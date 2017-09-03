@@ -27,7 +27,12 @@
                     ctrl.reverseAnimated = !ctrl.reverseAnimated;
                 }, 3000);
             }
-        }
+        };
+        ctrl.isModalOpen = false;
+        
+        ctrl.toggleModal = function () {
+            ctrl.isModalOpen = !ctrl.isModalOpen;
+        };
     }
 
 })();
