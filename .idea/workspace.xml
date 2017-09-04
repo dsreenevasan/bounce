@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9ecb33c-c143-43ff-9417-4c94014e1697" name="Default" comment="modal done&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/volantis.iml" afterPath="$PROJECT_DIR$/.idea/volantis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b9ecb33c-c143-43ff-9417-4c94014e1697" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -327,7 +324,7 @@
       <workItem from="1504197568721" duration="10410000" />
       <workItem from="1504240507440" duration="10321000" />
       <workItem from="1504449877706" duration="15286000" />
-      <workItem from="1504501831856" duration="12636000" />
+      <workItem from="1504501831856" duration="12713000" />
     </task>
     <task id="LOCAL-00001" summary="just a try with bounce js">
       <created>1504453471762</created>
@@ -350,11 +347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504517043183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="service layer added">
+      <created>1504517347564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1504517347564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54250000" />
+    <option name="totallyTimeSpent" value="54327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1932" height="1092" extended-state="0" />
@@ -398,7 +402,8 @@
     <MESSAGE value="just a try with bounce js" />
     <MESSAGE value="modal done&#10;" />
     <MESSAGE value="events page layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="events page layout" />
+    <MESSAGE value="service layer added" />
+    <option name="LAST_COMMIT_MESSAGE" value="service layer added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
