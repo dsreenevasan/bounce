@@ -155,14 +155,14 @@
     display: block;
     vertical-align: middle;
     text-align: center;
-    margin-top: 20vh
+    margin-top: 70vh;
 }
 
 .modal-inset {
     position: relative;
     padding: 60px;
     background-color: white;
-    height: 65vh;
+    height: 70vh;
     width: 65vw;
     min-width: 320px;
     min-height: 126px;
@@ -360,11 +360,48 @@
 }
 
 .events-div{
-    height: 30vh;
-    width: 14vw;
+    height: 20vh;
+    width: 30vw;
     float: left;
     background-color: lightblue;
     position:relative;
-    margin-left: 5vw;
+    margin-left: 7vw;
     margin-top: 5vh;
+}
+
+.row{
+    margin-left: 7vw;
+}
+
+@media(min-width: 768px) and (max-width: 1079px){
+    .events-div{
+        height: 20vh;
+        width: 17vw;
+        float: left;
+        background-color: lightblue;
+        position:relative;
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+
+    .row{
+        margin-left: 4vw;
+    }
+}
+
+
+@media(min-width: 1080px) {
+    .events-div{
+        height: 30vh;
+        width: 14vw;
+        float: left;
+        background-color: lightblue;
+        position:relative;
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+
+    .row{
+        margin-left: 6vw;
+    }
 }
