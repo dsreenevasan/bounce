@@ -91,9 +91,7 @@
     var app = angular.module('vyuhaa', [
         'ui.router',
         'ngCookies'
-    ], function ($locationProvider) {
-        $locationProvider.html5Mode(true);
-    })
+    ])
         .run(
             function ($cookieStore, $location, $rootScope, $state, $window) {
                 /*$window.ga('create', 'UA-89398442-1', 'auto');
@@ -149,7 +147,9 @@
                 });
             }
         )
-        .config(function ($stateProvider, $urlRouterProvider) {
+        .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+
+            $locationProvider.html5Mode({ enabled: true });
             $urlRouterProvider.otherwise('/home');
 
             angular.forEach(states, function(state){
