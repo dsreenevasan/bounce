@@ -10,14 +10,37 @@
 
     <div class="events" style="margin-top: 5vh">
         <div class="modal-frame" ng-class="{'state-appear' : ctrl.isModalOpen}">
-            <div class="modal">
-                <div class="modal-inset">
+            <div class="modal" style="overflow: auto">
+                <div class="modal-inset" style="overflow: auto">
                     <div class="button close" ng-click="ctrl.toggleModal()"><i class="fa fa-close" style="color: black"></i></div>
 
-                    <div class="modal-body">
-                        <h3>Such Modal, Much Animate!</h3>
-                        <p>Nothing groundbreaking, but I hope you enjoyed <br /> the physics for the open/close animation =).</p>
-                        <p class="ps">**I know the SASS is a bit messy, I did this on the fly and for fun <br /> and w.e. I DO WHAT I WANT!!</p>
+                    <div class="modal-body" style="overflow: auto">
+                        <h1>{{ctrl.cmnname}}</h1>
+                        <div class="heading">Description</div>
+                        <p>{{ctrl.cmndescription}}</p>
+                        <div class="heading">Date & Time</div>
+                        <p>{{ctrl.cmndate}} <span style="color:black">at</span> {{ctrl.cmntime}}</p>
+                        <div class="heading">Venue</div>
+                        <p>{{ctrl.cmnvenue}}</p>
+                        <div class="heading">Rules</div>
+                        <ol>
+                        <div ng-repeat="value in ctrl.cmnrules">
+                        <li>{{value}}</li>
+                        </div>
+                        </ol>             
+                        <div class="heading">Contact</div>
+                        <ol style="list-style-type: upper-roman;">
+                        <div ng-repeat="value in ctrl.cmncontact">
+                        <li>{{value}}</li>
+                        </div>
+                        </ol>  
+                        <div class="heading">FAQ</div>
+                        <ol >
+                        <div ng-repeat="value in ctrl.cmnfaq">
+                        <li><strong>{{value.question}}</strong></li>
+                            <p style="padding-left: 50px">{{value.answer}}</p>
+                        </div>
+                        </ol>                                     
                     </div>
                 </div>
             </div>
@@ -25,32 +48,12 @@
         <div class="modal-overlay" ng-class="{'state-show': ctrl.isModalOpen}"></div>
 
         <div class="row">
-            <div class="events-div">
-                <button class="fancy-btn open" ng-click="ctrl.toggleModal()">View</button>
-            </div>
-
-            <div class="events-div">
-                <button class="fancy-btn open" ng-click="ctrl.toggleModal()">View</button>
-            </div>
-
-            <div class="events-div">
-                <button class="fancy-btn open" ng-click="ctrl.toggleModal()">View</button>
-            </div>
-
-            <div class="events-div">
-                <button class="fancy-btn open" ng-click="ctrl.toggleModal()">View</button>
-            </div>
-
-            <div class="events-div">
-                <button class="fancy-btn open" ng-click="ctrl.toggleModal()">View</button>
-            </div>
-
-            <div class="events-div">
-                <button class="fancy-btn open" ng-click="ctrl.toggleModal()">View</button>
+            <div ng-repeat="event in ctrl.eventList">
+                    <div class="events-div">
+                        <button class="fancy-btn open"  ng-click="ctrl.toggleModalEvent(event.index)">View</button>
+                    </div>
             </div>
         </div>
 
-
-        <!--<button class="fancy-btn open" ng-click="ctrl.toggleModal()">Can I haz Modal?</button>-->
     </div>
 </div>

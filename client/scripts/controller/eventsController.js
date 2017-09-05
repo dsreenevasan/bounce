@@ -42,6 +42,101 @@
         ctrl.toggleModal = function () {
             ctrl.isModalOpen = !ctrl.isModalOpen;
         };
+        ctrl.toggleModalEvent = function (eventIndex) {
+            ctrl.isModalOpen = !ctrl.isModalOpen;
+            var i,mainindex=parseInt(eventIndex);
+            for(i=0;i<6;i++)
+            {
+            	if(this.eventList[i].index===mainindex)
+            	{
+            		this.cmnindex=mainindex;
+            		this.cmnname=this.eventList[i].name;
+            		this.cmndescription=this.eventList[i].description;
+            		this.cmndate=this.eventList[i].date;
+            		this.cmntime=this.eventList[i].time;
+            		this.cmnvenue=this.eventList[i].venue;
+            		this.cmncontact=this.eventList[i].contact;
+            		this.cmnrules=this.eventList[i].rules;
+            		this.cmnfaq=this.eventList[i].FAQ;
+            		break;
+            	}
+            }
+            //console.log(cmnname);
+        };
+        var cmnindex,cmnname,cmndescription,cmndate,cmntime,cmnvenue,cmncontact,cmnrules,cmnfaq;
+
+        this.eventList=[
+
+			{
+				"index": 1,
+				"name": "EventName1",
+				"description": "This is event description",
+				"date": "10-10-17",
+				"time": "10:00PM",
+				"venue": "SNH",
+				"contact":["AAA : 9999999999","BBB : 8888888888"],
+				"rules": ["7 members per team","No internet allowed"],
+				"FAQ": [{"question":"Some question?","answer":"Answer"},{"question":"What are prerequisites?","answer":"Mathematics,Puzzles"}]
+			},
+			{
+				"index": 2,
+				"name": "EventName2",
+				"description": "This is event description",
+				"date": "10-10-17",
+				"time": "10:00PM",
+				"venue": "SNH",
+				"contact":["AAA : 9999999999","BBB : 8888888888"],
+				"rules": ["4 members per team","No internet allowed"],
+				"FAQ": [{"question":"Some question?","answer":"Answer"},{"question":"What are prerequisites?","answer":"Mathematics,Puzzles"}]
+			},
+
+			{
+				"index": 3,
+				"name": "EventName3",
+				"description": "This is event description",
+				"date": "10-10-17",
+				"time": "10:00PM",
+				"venue": "SNH",
+				"contact":["AAA : 9999999999","BBB : 8888888888"],
+				"rules": ["3 members per team","No internet allowed"],
+				"FAQ": [{"question":"Some question?","answer":"Answer"},{"question":"What are prerequisites?","answer":"Mathematics,Puzzles"}]
+			},
+
+			{
+				"index": 4,
+				"name": "EventName4",
+				"description": "This is event description",
+				"date": "10-10-17",
+				"time": "10:00PM",
+				"venue": "SNH",
+				"contact":["AAA : 9999999999","BBB : 8888888888"],
+				"rules": ["10 members per team","No internet allowed"],
+				"FAQ": [{"question":"Some question?","answer":"Answer"},{"question":"What are prerequisites?","answer":"Mathematics,Puzzles"}]
+			},
+
+			{
+				"index": 5,
+				"name": "EventName5",
+				"description": "This is event description",
+				"date": "10-10-17",
+				"time": "10:00PM",
+				"venue": "SNH",
+				"contact":["AAA : 9999999999","BBB : 8888888888"],
+				"rules": ["21 members per team","No internet allowed"],
+				"FAQ": [{"question":"Some question?","answer":"Answer"},{"question":"What are prerequisites?","answer":"Mathematics,Puzzles"}]			
+			},
+			{
+				"index": 6,
+				"name": "EventName6",
+				"description": "This is event description",
+				"date": "10-10-17",
+				"time": "10:00PM",
+				"venue": "SNH",
+				"contact":["AAA : 9999999999","BBB : 8888888888"],
+				"rules": ["23 members per team","No internet allowed"],
+				"FAQ": [{"question":"Some question?","answer":"Answer"},{"question":"What are prerequisites?","answer":"Mathematics,Puzzles"}]
+			}
+        ]
     }
 
 })();
